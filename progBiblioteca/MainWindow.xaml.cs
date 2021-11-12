@@ -53,7 +53,23 @@ namespace progBiblioteca
         {
             try
             {
-    
+                if (radioAutore.IsChecked == true)
+                {
+                    if (txtCerca.Text == "") throw new Exception("Inserire un autore valido");
+                    lstRicerca.ItemsSource = null;
+                    lstRicerca.ItemsSource = _biblioteca.CercaLibriAutore(txtCerca.Text);
+                }
+                else if(radioTitolo.IsChecked == true)
+                {
+                    if (txtCerca.Text == "") throw new Exception("Inserire un titolo valido");
+
+                    lstRicerca.ItemsSource = null;
+                    lstRicerca.ItemsSource = new List<Libro>() { _biblioteca.CercaLibroTitolo(txtCerca.Text) }; //comodità assegno una lista fatta di un solo libro cosi da usare sempre il listBox
+                }
+                else
+                {
+                    throw new Exception("Selezionare un opzione per la ricerca");
+                }
             }
             catch (Exception ex)
             {
