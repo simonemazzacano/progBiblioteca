@@ -57,5 +57,10 @@ namespace progBiblioteca
         {
             return Libri.Count;
         }
+
+        public override string ToString()
+        {
+            return $"Nome: {Nome}\nIndirizzo: {Indirizzo}\nApertura: {Apertura.Hour}:{Apertura.Minute}\nChiusura: {Chiusura.Hour}:{Chiusura.Minute}\nNumero libri: {NumeroLibri()}";
+        }
     }
 }

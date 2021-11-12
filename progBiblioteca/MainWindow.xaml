@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label x:Name="lbl_InfoBiblioteca" Content="" HorizontalAlignment="Left" Margin="639,274,0,0" VerticalAlignment="Top" Height="95" Width="129"/>
+        <TextBox x:Name="txtAutore" HorizontalAlignment="Left" Height="35" Margin="200,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <TextBox x:Name="txtTitolo" HorizontalAlignment="Left" Height="35" Margin="200,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <TextBox x:Name="txtAnnoPubblicazione" HorizontalAlignment="Left" Height="35" Margin="200,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <TextBox x:Name="txtEditore" HorizontalAlignment="Left" Height="35" Margin="200,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <TextBox x:Name="txtNumeroPagine" HorizontalAlignment="Left" Height="35" Margin="200,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <Button x:Name="btnAggiungiLibro" Content="Aggiungi libro" HorizontalAlignment="Left" Margin="200,290,0,0" VerticalAlignment="Top" Width="138" Height="35" Click="btnAggiungiLibro_Click"/>
+        <ListBox x:Name="lstiLibri" HorizontalAlignment="Left" Height="210" Margin="23,20,0,0" VerticalAlignment="Top" Width="152"/>
+        <TextBox x:Name="txtCerca" HorizontalAlignment="Left" Height="35" Margin="549,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <RadioButton Content="Autore" HorizontalAlignment="Left" Margin="458,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Titolo" HorizontalAlignment="Left" Margin="458,69,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cerca per:" HorizontalAlignment="Left" Margin="449,23,0,0" VerticalAlignment="Top" Height="32" Width="121"/>
+        <ListBox x:Name="lstRicerca" HorizontalAlignment="Left" Height="180" Margin="549,124,0,0" VerticalAlignment="Top" Width="138"/>
+        <Button x:Name="btnCerca" Content="Cerca" HorizontalAlignment="Left" Margin="549,69,0,0" VerticalAlignment="Top" Width="138" Height="35" Click="btnCerca_Click"/>
+        <Label Content="Autore" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" Height="32" Width="121"/>
+        <Label Content="Titolo" HorizontalAlignment="Left" Margin="200,52,0,0" VerticalAlignment="Top" Height="32" Width="121"/>
+        <Label Content="Anno pubblicazione" HorizontalAlignment="Left" Margin="200,106,0,0" VerticalAlignment="Top" Height="32" Width="121"/>
+        <Label Content="Editore" HorizontalAlignment="Left" Margin="200,168,0,0" VerticalAlignment="Top" Height="32" Width="121"/>
+        <Label Content="Numero pagine" HorizontalAlignment="Left" Margin="200,231,0,0" VerticalAlignment="Top" Height="32" Width="121"/>
+
     </Grid>
 </Window>

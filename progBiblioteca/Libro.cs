@@ -8,7 +8,7 @@ namespace progBiblioteca
 {
     class Libro
     {
-        public Libro(string autore, string titolo, int annoPubblicazione, string editore, int numPagine)
+        public Libro(string autore, string titolo, DateTime annoPubblicazione, string editore, int numPagine)
         {
             Autore = autore;
             Titolo = titolo;
@@ -19,7 +19,7 @@ namespace progBiblioteca
 
         public string Autore { get; set; }
         public string Titolo { get; set; }
-        public int AnnoPubblicazione { get; set; }
+        public DateTime AnnoPubblicazione { get; set; }
         public string Editore { get; set; }
         public int NumPagine { get; set; }
 
@@ -35,7 +35,7 @@ namespace progBiblioteca
 
         public override string ToString()
         {
-            return $"Autore: {Autore}\nTitolo: {Titolo}\nAnno pubblicazione: {AnnoPubblicazione}\n Editore: {Editore}\nNumero pagine: {NumPagine}";
+            return $"Autore: {Autore}\nTitolo: {Titolo}\nAnno pubblicazione: {AnnoPubblicazione.Year}\n Editore: {Editore}\nNumero pagine: {NumPagine}";
         }
     }
 }
